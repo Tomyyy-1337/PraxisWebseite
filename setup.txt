@@ -1,0 +1,19 @@
+Python 3.10.0
+
+Virtual Enviorment erstellen:
+virtualenv env
+
+Virtual enviorment betreten 
+.\env\Scripts\activate
+
+Django install 
+pip install Django
+
+Django Projekt erstellen
+django-admin startproject Project
+
+Django App erstellen
+python manage.py startapp Content
+
+DB init:
+python .\manage.py migrate
