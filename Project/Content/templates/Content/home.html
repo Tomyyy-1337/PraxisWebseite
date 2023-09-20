@@ -1,9 +1,81 @@
 {% extends "main.html" %}
 {% block content %}
+{% load static %}
+  <div class="w3-container w3-content w3-center w3-padding-top-32" style="max-width:1000px">
+    <h2> Gastroenterologische Schwerpunktpraxis </h2>
+    <h3> Dr. med. Frank Paßberg</h3>
+  </div>
+  <div class="w3-content w3-padding-16" style="max-width:1000px"> 
+    <div class="w3-row-padding">
+      <div class="w3-twothird w3-margin-top">
+        <div class="w3-card">
+          <div class="w3-container" style="font-size: medium;">
+            <h3 class="w3-center">Unsere Praxisschwerpunkte</h3>
+            <ul>
+              <li>Gastroskopie (Magenspiegelung)</li>
+              <li>Koloskopie (Darmspiegelung)</li>
+              <li>Gastroskopie und Koloskopie in Kurznarkose</li>
+              <li>Polypenabtragung</li>
+              <li>Darmkrebs-Vorsorgeuntersuchungen</li>
+              <li>Sonographie (Ultraschalluntersuchung des Bauchraumes)</li>
+            </ul>
+            <form action="{% url 'leistungen' %}">
+              <button class="w3-button w3-section" style="background-color: #20313d; color: white;"> Mehr Details</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-top">
+        <div class="w3-card">
+          <img src="{% static 'Content/wartezimmer.jpg' %}" style="width: 100%;" alt="Wartezimmer">
+          <div class="w3-container">
+              <h3>Wartezimmer</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #20313d; color: white; font-size: medium;">
+    <div class="w3-container w3-content" style="max-width:1000px;">
+        <h2 class="w3-container w3-content w3-center w3-wide w3-padding-top-32"> TEAM </h2>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <img src="{% static 'Content/passberg.jpg' %}" alt="Dr. med. Frank Paßberg" style="width:100%">
+            <div class="w3-container w3-white">
+              <p><b>Dr. med. Frank Paßberg</b></p>
+              <ul>
+                <li>Facharzt für Innere Medizin</li>
+                <li>Facharzt für Allgemeinmedizin</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="{% static 'Content/hoffmann.jpg' %}" alt="Karin Hoffmann" style="width:100%">
+            <div class="w3-container w3-white">
+              <p><b>Karin Hoffmann</b></p>
+              <ul>
+                <li>Arzthelferin</li>
+                <li>Endoskopie</li>
+                <li>Anmeldung</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="{% static 'Content/beck.jpg' %}" alt="Alexandra Beck" style="width:100%">
+            <div class="w3-container w3-white">
+              <p><b>Alexandra Beck</b></p>
+              <ul>
+                <li>Arzthelferin</li>
+                <li>Endoskopie</li>
+                <li>Anmeldung</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
-<div class="w3-container">
-    <h1> Gastroenterologische Schwerpunktpraxis </h1>
-    <h2> Dr. med. Frank Paßberg</h2>
-</div>
+  {% include 'kontaktTemplate.html' %}
 
+  
 {% endblock content %}
