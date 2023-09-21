@@ -1,10 +1,10 @@
 {% extends "main.html" %}
 {% block content %}
 
-<div class="w3-content w3-padding-top-32 w3-animate-right" style="max-width:1000px"> 
+<div class="w3-content w3-padding-top-32 w3-animate-right" style="max-width:1000px; "> 
     <div class="w3-container">
-        <button onclick="Accordion ('A1')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Allgemeine Leistungen</h3> </button>
-        <div id="A1" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A1')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Allgemeine Leistungen</h3> </button>
+        <div id="A1" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <h3>Körperliche Untersuchung und Beratung</h3>
             <ul>
                 <li>Labordiagnostik</li>
@@ -29,8 +29,8 @@
             </ul>
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A2')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Magenspiegelung</h3> </button>
-        <div id="A2" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A2')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Magenspiegelung</h3> </button>
+        <div id="A2" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <p>Bei einer Magenspiegelung (Gastroskopie) wird mit einem flexiblen Schlauch (Endoskop), an dessen Spitze sich eine Videooptik befindet, Speiseröhre, Magen und Zwölffingerdarm untersucht. Die Bilder
                 werden dann in Echtzeit über einen Videoprozessor auf einen Bildschirm übertragen.</p>
             <p>Damit der Patient eine streßfreie und schmerzlose Untersuchung erhält, wird heute in den meisten Fällen in Sedierung oder besser noch in Kurznarkose untersucht.</p>
@@ -42,8 +42,8 @@
             <p>Eine Krankmeldung erfolgt üblicherweise für den Untersuchungstag.</p>
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A3')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Darmspiegelung</h3> </button>
-        <div id="A3" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A3')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Darmspiegelung</h3> </button>
+        <div id="A3" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <p>Bei einer Koloskopie wird der gesamte Dickdarm und der angrenzende Dünndarm mit einem flexiblem Schlauch, an dessen Spitze sich eine Videooptik befindet, untersucht. Der Untersucher sieht die
             Bilder auf einem Videomonitor und steuert das Koloskop unter Sicht durch den Darm.</p>
             <p>Damit der Arzt überhaupt etwas sehen kann, muss der Patient zuvor abführen. Wie der Patient abführen muss und&nbsp;wie die Untersuchung im Einzelnen abläuft, wird mit jedem Patienten in einem
@@ -61,18 +61,18 @@
             <p>Bitte beachten Sie, dass Sie am Untersuchungstag nicht selbst Auto fahren dürfen. Für den Untersuchungstag erhalten Sie eine Krankmeldung.</p> 
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A4')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Vorsorgedarmspiegelung</h3> </button>
-        <div id="A4" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A4')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Vorsorgedarmspiegelung</h3> </button>
+        <div id="A4" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <p>Jährlich erkranken in Deutschland&nbsp;ca. 65.000&nbsp;Menschen&nbsp;neu an Darmkrebs. Mehr als 25.000 sterben daran. Die Gefahr, im Laufe seines Lebens&nbsp;selbst an Darmkrebs zu erkranken,
             liegt bei ca. 6%. Damit ist Darmkrebs in Deutschland die zweithäufigste Krebserkrankung.</p>
             <p>Ab dem 50. Lebensjahr nimmt die Wahrscheinlichkeit an einem Darmkrebs zu erkranken deutlich zu. Da dieser bösartige Tumor in den meisten Fällen aus gutartigen Polypen hervorgeht, sind wir heute
-            durch rechtzeitiges <a href="https://www.dr-passberg.de/leistungen/polypenabtragung/">Entfernen dieser Polypen</a> in der Lage, Darmkrebs zu verhindern, bevor er entsteht.</p>
+            durch rechtzeitiges Entfernen dieser Polypen in der Lage, Darmkrebs zu verhindern, bevor er entsteht.</p>
             <p>In Deutschland werden Vorsorgekoloskopien von den Krankenkassen ab dem 55. Lebensjahr bezahlt. Sollte bei dieser Untersuchung keine Polyp gefunden werden und liegt keine familiäre Vorbelastung
             vor, dann ist eine Kontrolluntersuchung erst in 10 Jahren notwendig. Wurden bei der Untersuchung Polypen festgestellt und abgetragen, dann erfolgt eine Kontrolle gemäß den <a href="http://www.dgvs.de" target="_blank">Leitlinien der Deutschen Gesellschaft für Verdauungs- und Stoffwechselerkrankungen</a>.</p> 
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A5')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Polypenabtragung</h3> </button>
-        <div id="A5" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A5')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Polypenabtragung</h3> </button>
+        <div id="A5" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <p>Einer der größten Vorteile einer endoskopischen Untersuchung am Verdauungstrakt ist die Tatsache, dass es sich hierbei nicht nur um eine diagnostische, sondern auch um eine therapeutische Maßnahme
             handelt. Das bedeutet, werden bei einer Magen- oder Darmspiegelung krankhafte Veränderungen - z.B. Polypen - festgestellt, dann können diese sofort in der gleichen Untersuchung schmerzfrei abgetragen
             werden. Bei etwa jedem dritten Patient findet sich bei einer Koloskopie ein abtragungswürdiger Befund.</p>
@@ -84,8 +84,8 @@
             <p>Nach einer endoskopischen Abtragung kann der Patient in der Regel nach ca. einer Stunde die Praxis wieder verlassen.</p> 
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A6')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Kurznarkose</h3> </button>
-        <div id="A6" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A6')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Kurznarkose</h3> </button>
+        <div id="A6" class="w3-hide w3-container w3-round-xlarge leistungen-farbe">
             <p>Heute muss kein Patient mehr Angst vor einer unangenehmen oder schmerzhaften Untersuchung haben. Seit einigen Jahren besteht die Möglichkeit eine endoskopische Untersuchung in Kurznarkose
             durchzuführen. Ein modernes Narkotikum hat nur noch eine Halbwertszeit von ca. 3 Minuten. Während der Untersuchung wird das Narkosemittel immer wieder bei Bedarf nachgespritzt.</p>
             <p>Eine Kurznarkose bietet gegenüber einer Untersuchung am wachen oder nur sedierten Patienten zahlreiche Vorteile.</p>
@@ -105,8 +105,8 @@
             <p><strong>﻿</strong></p> 
         </div>
         <div class="w3-margin"></div>
-        <button onclick="Accordion ('A7')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large"> <h3>Hygiene</h3> </button>
-        <div id="A7" class="w3-hide w3-container w3-round-xlarge" style="background-color: #ffffff;">
+        <button onclick="Accordion ('A7')" class="w3-left-align w3-block w3-button w3-border w3-border-black w3-round-large leistungen-farbe"> <h3>Hygiene</h3> </button>
+        <div id="A7" class="w3-hide w3-container w3-round-xlarge leistungen-farbe" >
             <p>Die einwandfreie hygienische Aufbereitung von Endoskopen und Endoskopiezubehör spielt in unserer Praxis eine zentrale Rolle. Hierbei kommt unserem <a href="https://www.dr-passberg.de/patienteninfo/qualitätsmanagement/">Qualitätsmanagement</a> eine wesentliche Funktion zu. In genau festgelegten Arbeitsanweisungen werden die Endoskopie und das Zubehör nach den Richtlinien des <a href="http://www.rki.de" target="_blank">Robert-Koch-Institutes</a> gereinigt, desinfiziert und sterilisiert.</p>
             <p>Für die Endoskop Aufbereitung steht uns ein vollautomatischer Thermodesinfektor Innova E3 zur Verfügung. Das notwendige Wasser wird in einer eignen Osmoseanlage vollentsalzt und vor dem Einsatz im
             Desinfektor sterilisiert. &nbsp;In wöchentlichen Selbstkontrollen und in halbjährigen Kontrollen des Medizinal-Untersuchungsamtes in Landau wird die hygienisch einwandfreie Koloskop Aufbereitung
