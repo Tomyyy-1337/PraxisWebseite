@@ -1,14 +1,14 @@
 <div class="w3-container w3-content" style="max-width:1000px; background-color: #f2f9ff;" id="contact">
-    <h2 class="w3-wide w3-center w3-padding-top-32" id="Kontakt">KONTAKT</h2>
+    <h2 class="w3-wide w3-center w3-padding-top-32 w3-animate-left" id="Kontakt">KONTAKT</h2>
     <div class="w3-row">
-      <div class="w3-col m6 w3-large w3-margin-bottom w3-padding-top-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom w3-padding-top-32 w3-animate-left">
         <i class="fa fa-map-marker" style="width:30px"></i><a href="https://maps.app.goo.gl/RgHEXSsdUnnjCEoz8">Hindenburgstr. 1 </a><br> 
         <i class="fa fa-map-marker" style="width:30px"></i>67433 Neustadt an der Weinstraße <br> 
         <i class="fa fa-phone" style="width:30px"></i> Tel: <a href="tel:+4963212339"> 06321/2339 </a><br>
         <i class="fa fa-fax" style="width:30px"></i> Fax: 06321/7229 <br>
         <i class="fa fa-envelope" style="width:30px"> </i> <a href="mailto:AnmeldungPassberg@t-online.de">AnmeldungPassberg@t-online.de</a> <br>
       </div>
-      <div class="w3-col m6 w3-padding-top-32">
+      <div class="w3-col m6 w3-padding-top-32 w3-animate-right">
         <table class="w3-table w3-border">
           <tr>
             <td> Montag:</td>
@@ -30,9 +30,9 @@
       </div>
     </div>
   </div>
-  <div class="w3-container w3-content w3-padding-32" style="max-width:1000px; background-color: #f2f9ff;" id="contact">
+  <div class="w3-container w3-content w3-padding-32 w3-animate-bottom" style="max-width:1000px; background-color: #f2f9ff;" id="contact">
     <h3 class="w3-center">Senden sie uns eine Nachricht</h3>
-    <form action="/action_page.php" target="_blank">
+    <form action="{% url 'home' %}" method="post">
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
           <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
